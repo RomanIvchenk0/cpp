@@ -379,9 +379,11 @@ void OpenAll() {
 
 
 void main() {
-	ftr: FillCells(5);
-	int x=0; int y=0;
 	char c;
+	while (c == 'Y' || c == 'y') {
+	FillCells(5);
+	int x=0; int y=0;
+	
 	do {
 		system("cls");
 		DisplayPole();
@@ -398,6 +400,7 @@ void main() {
 	OpenAll();
 	cout <<"Play again? [Y/N]";
 	cin >> c;
-	if (c == 'Y' || c == 'y') goto ftr;
+	}
+	
 	system("pause");
 }
